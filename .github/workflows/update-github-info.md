@@ -46,9 +46,16 @@ On each daily or manually requested run:
 3. Follow Mona's notes and update only `site/content/github-info.md` with
    relevant, concise, practical updates that help developers learn GitHub.
    Preserve useful existing content and include source links for new claims.
+   If no timely update is warranted, make sure the page has an `Official
+   sources` section linking to the GitHub Blog, GitHub Changelog, and Awesome
+   Copilot workflows pages. Add or refresh this section when it is missing or
+   outdated; do not invent claims or change content solely to create a pull
+   request.
 4. Use the `create-pull-request` safe output to open a pull request for Mona
    to review, with a title mentioning Mona or GitHub Info and a summary of the
    changes and sources. Do not write directly to `main` or merge the pull request.
 
-If there are no relevant, verifiable updates or no content changes are needed,
-call `noop` with a short explanation instead of creating a pull request.
+If there are no relevant, verifiable updates and the `Official sources` section
+is already current, or the source pages cannot be accessed and no independently
+verifiable improvements are available, call `noop` with a short explanation
+instead of creating a pull request.
